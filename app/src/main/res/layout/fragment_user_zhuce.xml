@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="请输入邮箱地址"
+        android:gravity="center"
+        android:ems="10"
+        android:id="@+id/et_register_email"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="请输入昵称"
+        android:gravity="center"
+        android:ems="10"
+        android:id="@+id/et_register_name"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/et_register_pwd"
+        android:layout_marginTop="10dp"
+        android:hint="密码：6~16位个字符"
+        android:gravity="center"/>
+
+    <Button
+        android:text="立即注册"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_zhuce"
+        android:textColor="@color/white"
+        android:background="@color/red"
+        android:layout_marginTop="30dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <CheckBox
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/checkbox"
+            android:gravity="center_vertical|center_horizontal"
+            android:button="@drawable/select_checkbox"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:text="我同意“服务条款”和“网络用户隐私保护和个人信息利用政策”"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
